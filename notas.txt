@@ -1,0 +1,12 @@
+-- La funcion casa(Casa) verifica si realmente es una Casa de la Base de conocimientos
+
+casa(gryffindor).
+
+permiteIngreso(Casa,_):- 
+    casa(Casa),
+    Casa \= slytherin.
+
+--Obtener elemenos de lista
+requiere(UnaTarea,UnaHerramienta):-
+    herramientasRequeridas(UnaTarea,Herramientas),
+    member(UnaHerramienta,Herramientas).
